@@ -45,6 +45,7 @@ public abstract class Observable {
 	public void unRegisterObserver(Class<?> clazz){
 		synchronized (clazz) {
 			if(observerList.contains(clazz)){
+				
 				observerList.remove(clazz);
 			}
 		}
